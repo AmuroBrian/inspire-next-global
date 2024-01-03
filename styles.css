@@ -1,9 +1,10 @@
 :root {
     /* --font-color: rgb(194, 169, 31); */
-    --font-title-color: yellow;
+    --font-title-color: #e0c48c;
+    --font-gold: yellow;
     --font-color: white;
     --title-font: 2rem;
-    --title-font-medium: 1.7rem;
+    --title-font-medium: 1.3rem;
     --content-font: 1rem;
     --subtitle-font: 1rem;
     --normal-pad: 20px;
@@ -35,6 +36,7 @@ body {
     background: rgb(251,250,250);
     background: linear-gradient(45deg, rgba(251,250,250,1) 0%, rgba(10,149,249,1) 100%);
     user-select: none;  
+    scroll-behavior: smooth;
 }
 
 .vid__background {
@@ -90,6 +92,22 @@ body {
     font-weight: 900;
     font-family: 'Train One';
     opacity: 1;
+    position: relative;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    height: 100%;
+    background: none;
+    object-fit: cover;
+    background: none;
+}
+
+#logo {
+    width: auto;
+    height: 100%;
+    background: none;
 }
 
 .menulist {
@@ -178,7 +196,7 @@ body {
 }
 
 .color2 {
-    color: var(--font-title-color);
+    color: var(--font-gold);
     background: none;
 }
 
@@ -186,7 +204,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--font-title-color);
+    color: var(--font-gold);
     font-size: 6rem;
     grid-area: message2;
     background: none;
@@ -210,9 +228,60 @@ body {
 .main1 {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: white;
     border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 100px;
+    gap: 20px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    color: var(--font-title-color);
+    font-size: 3rem;
+    font-weight: 800;
+    background: none;
+}
+
+.content {
+    color: black;
+    font-size: 2rem;
+    background: none;
+    text-align: justify;
+}
+
+.letter {
+    font-size: 3rem;
+    color: var(--font-title-color);
+    background: none;
+    /* text-shadow: 0 0 10px black; */
+}
+
+.read_button {
+    width: auto;
+    height: auto;
+    color: var(--font-title-color);
+    display: flex;
+    background-color: black;
+    border-radius: var(--radius);
+    padding: 10px;
+    font-weight: 800;
+    background: none;
+    font-size: 2rem;
+    border: 3px solid var(--font-title-color);
+}
+
+.read_button:hover {
+    background-color: black;
+    color: var(--font-gold);
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .navbar.blacken {
@@ -237,10 +306,17 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.learn__ref {
+    background: none;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
 .button:hover {
     cursor: pointer;
     background-color: black;
-    color: var(--font-title-color);
+    color: var(--font-gold);
     transition: all 0.3s ease;
     text-shadow: 0 0 50px rgba(255,255,255,0.5);
 }
@@ -348,7 +424,7 @@ body {
         align-items: center;
         padding: 0;
         margin: 0;
-        gap: 50px;
+        gap: 30px;
     }
 
     .message1 {
@@ -356,6 +432,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 90%;
+        margin: 0 5%;
         height: auto;
         padding-top: 200px;
     }
@@ -375,5 +452,66 @@ body {
 
     .button {
         font-size: 1.2rem;
+        background-color: black;
+        color: var(--font-gold);
+    }
+
+    .main1 {
+        position: relative;
+        width: 100vw;
+        height: auto;
+        background: white;
+        border-radius: var(--radius);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 20px;
+        gap: 20px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        color: var(--font-title-color);
+        font-size: 2rem;
+        font-weight: 800;
+        background: none;
+    }
+
+    .content {
+        color: black;
+        font-size: 1.1rem;
+        background: none;
+        text-align: justify;
+    }
+
+    .letter {
+        font-size: 1.3rem;
+        color: var(--font-title-color);
+        background: none;
+        /* text-shadow: 0 0 10px black; */
+    }
+
+    .read_button {
+        width: auto;
+        height: auto;
+        color: var(--font-title-color);
+        display: flex;
+        background-color: black;
+        border-radius: var(--radius);
+        padding: 10px;
+        font-weight: 800;
+        background: none;
+        font-size: 1.2rem;
+        border: 3px solid var(--font-title-color);
+    }
+
+    .read_button:hover {
+        background-color: black;
+        color: var(--font-gold);
+        transition: all 0.5s ease;
+        cursor: pointer;
     }
 }
