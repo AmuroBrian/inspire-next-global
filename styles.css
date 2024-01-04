@@ -1301,7 +1301,7 @@ ol {
     .portfolio {
         width: 100%;
         color: black;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         background: none;
     }
@@ -1468,7 +1468,7 @@ ol {
     
     .zaibatsu__desc {
         color: var(--font-content-color);
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 100%;
         background: none;
     }
