@@ -647,12 +647,11 @@ i {
 }
 
 .portfolio__title {
-    color: black;
-    font-size: var(--title-font);
-    background: none;
-    text-align: center;
-    font-weight: 800;
     width: 100%;
+    text-align: center;
+    color: black;
+    font-size: var(--about-title-font);
+    background: none;
 }
 
 .portfolio__grid {
@@ -901,6 +900,11 @@ ol {
 #zaibatsu {
     width: 80%;
     border-radius: 10px;
+    background: none;
+}
+
+.company-partners {
+    width: 80%;
     background: none;
 }
 
