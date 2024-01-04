@@ -390,7 +390,7 @@ body {
 
 #finance {
     width: 80%;
-    height: 80%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     grid-area: finance;
@@ -398,7 +398,7 @@ body {
 
 #infra {
     width: 80%;
-    height: 80%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     grid-area: infra;
@@ -406,18 +406,42 @@ body {
 
 #capital {
     width: 80%;
-    height: 80%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     grid-area: capital;
 }
 
 #real-estate {
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     grid-area: real-estate;
+}
+
+#business-loan {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: business;
+}
+
+#personal-loan {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: personal;
+}
+
+#car-loan {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: car;
 }
 
 .grid1 {
@@ -428,7 +452,7 @@ body {
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-template-areas: "finance finance__desc" "infra__desc infra" "capital capital__desc" "real-estate__desc real-estate";
+    grid-template-areas: "business finance__desc" "infra__desc personal" "car capital__desc" "real-estate__desc real-estate";
     background: none;
 }
 
@@ -903,6 +927,14 @@ ol {
     background: none;
 }
 
+.comp-partners__title {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    background: none;
+}
+
 .company-partners {
     width: 80%;
     background: none;
@@ -1096,7 +1128,7 @@ ol {
     .content__grid {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        /* grid-gap: 10px; */
         width: 100%;
         height: auto;
         justify-content: center;
@@ -1118,7 +1150,7 @@ ol {
     }
     #finance {
         width: 80%;
-        height: 80%;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
         /* grid-area: finance; */
@@ -1126,7 +1158,7 @@ ol {
     
     #infra {
         width: 80%;
-        height: 80%;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
         /* grid-area: infra; */
@@ -1134,18 +1166,43 @@ ol {
     
     #capital {
         width: 80%;
-        height: 80%;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
         /* grid-area: capital; */
     }
 
     #real-estate {
-        width: 80%;
-        height: 80%;
+        width: 90%;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
     }
+
+    #business-loan {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        grid-area: business;
+    }
+    
+    #personal-loan {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        grid-area: personal;
+    }
+    
+    #car-loan {
+        width: 90%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        grid-area: car;
+    }
+    
 
     .about__page {
         display: flex;
@@ -1477,5 +1534,9 @@ ol {
         width: 80%;
         border-radius: 10px;
         background: none;
+    }
+
+    .comp-partners__title {
+        font-size: 1.7rem;
     }
 }
