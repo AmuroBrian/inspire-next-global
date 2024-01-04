@@ -3,6 +3,7 @@ const menulist = document.querySelector('.menulist');
 const bar = document.querySelector('.menubar');
 const main = document.querySelectorAll('.show');
 let navbar = document.getElementById('navbar');
+const fade = document.querySelectorAll('.imageAnim');
 
 
 // console.log(bar);
@@ -26,3 +27,14 @@ const observer = new IntersectionObserver(entries => {
 main.forEach(container => {
     observer.observe(container)
 })
+
+const observerAnim = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle('fade__up', entry.isIntersecting)
+    })
+})
+
+fade.forEach(fades => {
+    observerAnim.observe(fades)
+})
+
