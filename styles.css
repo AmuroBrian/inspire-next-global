@@ -7,7 +7,7 @@
     --font-color: white;
     --title-font: 2rem;
     --title-font-medium: 1.3rem;
-    --content-font: 1rem;
+    --content-font: 1.3rem;
     --font-content-color: rgb(129, 133, 137);
     --subtitle-font: 1rem;
     --normal-pad: 20px;
@@ -335,10 +335,67 @@ body {
 
 .cont1 {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
+    flex-direction: column;
     position: relative;
     background: white;
+}
+
+.content__grid {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "finance finance__desc" "infra__desc infra" "capital capital__desc";
+    background: none;
+}
+
+.desc {
+    width: 60%;
+    color: var(--font-content-color);
+    font-size: var(--content-font);
+    grid-area: desc1;
+    background: none;
+}
+
+.finance__desc {
+    grid-area: finance__desc;
+}
+
+.infra__desc {
+    grid-area: infra__desc;
+}
+
+.capital__desc {
+    grid-area: capital__desc;
+}
+
+#finance {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: finance;
+}
+
+#infra {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: infra;
+}
+
+#capital {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: capital;
 }
 
 .cont2 {
@@ -539,15 +596,61 @@ body {
         border-radius: var(--radius);
         padding: 10px;
         font-weight: 800;
-        background: none;
         font-size: 1.2rem;
         border: 3px solid var(--font-title-color);
     }
 
     .read_button:hover {
-        background-color: black;
-        color: var(--font-gold);
+        background-color: rgba(255,255,255,0.18);
+        color: black;
         transition: all 0.5s ease;
-        cursor: pointer;
+        border: 3px solid black;
+    }
+
+    .content__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        padding: 20px;
+    }
+
+    .desc {
+        width: 100%;
+        color: var(--font-content-color);
+        font-size: 1rem;
+        background: none;
+    }
+    .letter {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    #finance {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        /* grid-area: finance; */
+    }
+    
+    #infra {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        /* grid-area: infra; */
+    }
+    
+    #capital {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+        /* grid-area: capital; */
     }
 }
