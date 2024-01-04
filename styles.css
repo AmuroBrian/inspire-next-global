@@ -1,11 +1,14 @@
 :root {
     /* --font-color: rgb(194, 169, 31); */
-    --font-title-color: #e0c48c;
-    --font-gold: yellow;
+    /* --font-title-color: #e0c48c; */
+    --font-title-color: white;
+    --background-color: #1886e5;
+    --font-gold: white;
     --font-color: white;
     --title-font: 2rem;
     --title-font-medium: 1.3rem;
     --content-font: 1rem;
+    --font-content-color: rgb(129, 133, 137);
     --subtitle-font: 1rem;
     --normal-pad: 20px;
     --long-space: 50px;
@@ -198,6 +201,7 @@ body {
 .color2 {
     color: var(--font-gold);
     background: none;
+    text-shadow: 0 0 100px white;
 }
 
 .message2 {
@@ -243,22 +247,24 @@ body {
     width: 100%;
     text-align: center;
     height: auto;
-    color: var(--font-title-color);
+    color: black;
     font-size: 3rem;
     font-weight: 800;
     background: none;
 }
 
 .content {
-    color: black;
+    color: var(--font-content-color);
     font-size: 2rem;
     background: none;
-    text-align: justify;
+    text-align: center;
+    line-height: 50px;
 }
 
 .letter {
     font-size: 3rem;
-    color: var(--font-title-color);
+    /* color: var(--font-title-color); */
+    color: black;
     background: none;
     /* text-shadow: 0 0 10px black; */
 }
@@ -268,24 +274,24 @@ body {
     height: auto;
     color: var(--font-title-color);
     display: flex;
-    background-color: black;
+    background: black;
     border-radius: var(--radius);
     padding: 10px;
     font-weight: 800;
-    background: none;
     font-size: 2rem;
     border: 3px solid var(--font-title-color);
 }
 
 .read_button:hover {
-    background-color: black;
-    color: var(--font-gold);
+    background-color: rgba( 255, 255, 255, 0.18 );
+    color: black;
     transition: all 0.5s ease;
     cursor: pointer;
+    border: 3px solid black;
 }
 
 .navbar.blacken {
-    background-color: black;
+    background-color: var(--background-color);
     transition: all 0.5s ease;
     box-shadow: 0 5px 50px black;
 }
@@ -295,10 +301,10 @@ body {
     height: auto;
     font-size: var(--title-font);
     padding: 10px;
-    color: black;
+    color: white;
     font-weight: 900;
-    border-radius: 10px;
-    background: rgba( 255, 255, 255, 0.25 );
+
+    background: rgba( 0, 0, 0, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -315,10 +321,40 @@ body {
 
 .button:hover {
     cursor: pointer;
-    background-color: black;
-    color: var(--font-gold);
+    /* background-color: black; */
+    color: black;
     transition: all 0.3s ease;
-    text-shadow: 0 0 50px rgba(255,255,255,0.5);
+    /* text-shadow: 0 0 50px rgba(255,255,255,0.5); */
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.cont1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: white;
+}
+
+.cont2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: white;
+}
+
+.cont3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background: white;
 }
 
 @keyframes faded {
@@ -413,7 +449,8 @@ body {
     }
 
     .menulist.is-black {
-        background-color: black;
+        background-color: var(--background-color);
+        opacity: 0.9;
     }
 
     .main {
@@ -474,7 +511,6 @@ body {
         width: 100%;
         text-align: center;
         height: auto;
-        color: var(--font-title-color);
         font-size: 2rem;
         font-weight: 800;
         background: none;
@@ -484,14 +520,14 @@ body {
         color: black;
         font-size: 1.1rem;
         background: none;
-        text-align: justify;
+        text-align: left;
     }
 
     .letter {
         font-size: 1.3rem;
-        color: var(--font-title-color);
+        /* color: var(--font-title-color); */
+        /* color: var(--background-color); */
         background: none;
-        /* text-shadow: 0 0 10px black; */
     }
 
     .read_button {
