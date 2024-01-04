@@ -13,6 +13,7 @@
     --normal-pad: 20px;
     --long-space: 50px;
     --radius: 10px;
+    --about-title-font: 3rem;
 }
 
 body {
@@ -290,6 +291,13 @@ body {
     border: 3px solid black;
 }
 
+.read_ref {
+    background: none;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+}
+
 .navbar.blacken {
     background-color: var(--background-color);
     transition: all 0.5s ease;
@@ -374,6 +382,10 @@ body {
     grid-area: capital__desc;
 }
 
+.real-estate__desc {
+    grid-area: real-estate__desc;
+}
+
 #finance {
     width: 80%;
     height: 80%;
@@ -398,10 +410,31 @@ body {
     grid-area: capital;
 }
 
+#real-estate {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    grid-area: real-estate;
+}
+
+.grid1 {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "finance finance__desc" "infra__desc infra" "capital capital__desc" "real-estate__desc real-estate";
+    background: none;
+}
+
 .cont2 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
     position: relative;
     background: white;
 }
@@ -414,12 +447,57 @@ body {
     background: white;
 }
 
+.about__page {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding-top: 100px;
+}
+
+.about__title {
+    width: 100%;
+    color: black;
+    font-size: var(--about-title-font);
+    background: none;
+    text-align: center;
+    font-weight: 800;
+}
+
+.overview__container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+}
+
+#overview {
+    font-size: var(--content-font);
+    color: var(--font-content-color);
+    width: 50%;
+    background:none;
+}
+
+#hi-tech {
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+}
+
 @keyframes faded {
     from {
         opacity: 0;
     } to {
         opacity: 1;
     }
+}
+
+b {
+    background: none;
 }
 
 @media screen and (max-width: 960px){
@@ -577,7 +655,7 @@ body {
         color: black;
         font-size: 1.1rem;
         background: none;
-        text-align: left;
+        text-align: center;
     }
 
     .letter {
@@ -652,5 +730,53 @@ body {
         object-fit: cover;
         border-radius: 10px;
         /* grid-area: capital; */
+    }
+
+    #real-estate {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .about__page {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        padding-top: 100px;
+    }
+    
+    .about__title {
+        width: 100%;
+        color: black;
+        font-size: var(--about-title-font);
+        background: none;
+        text-align: center;
+    }
+    
+    .overview__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+    
+    #overview {
+        font-size: 1rem;
+        color: var(--font-content-color);
+        width: 100%;
+        background:none;
+    }
+    
+    #hi-tech {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
 }
