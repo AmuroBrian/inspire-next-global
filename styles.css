@@ -882,7 +882,7 @@ tr td:nth-child(2){
     color: var(--font-content-color);
     font-size: 1.4rem;
     background: none;
-    line-height: 100px;
+    line-height: 50px;
 }
 
 .hiring__container {
@@ -937,6 +937,20 @@ ol {
 
 .company-partners {
     width: 80%;
+    background: none;
+}
+
+.contact__details {
+    word-wrap: break-word;
+    background: none;
+    text-decoration: none;
+    color: var(--font-content-color);
+    cursor: default;
+}
+
+.invisible__div {
+    width: 100%;
+    height: 120px;
     background: none;
 }
 
@@ -1492,9 +1506,9 @@ ol {
     .contacts__container {
         width: 100%;
         color: var(--font-content-color);
-        font-size: 1.2rem;
+        font-size: 1rem;
         background: none;
-        line-height: 100px;
+        line-height: 40px;
     }
     
     .hiring__container {
