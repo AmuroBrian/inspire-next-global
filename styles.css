@@ -657,7 +657,7 @@ i {
     width: 100%;
     color: var(--font-content-color);
     font-size: var(--content-font);
-    text-align: center;
+    text-align: left;
     background: none;
 }
 
@@ -1552,5 +1552,18 @@ ol {
 
     .comp-partners__title {
         font-size: 1.7rem;
+    }
+    .vision {
+        width: 100%;
+        color: var(--font-content-color);
+        font-size: 1rem;
+        text-align: center;
+        background: none;
+    }
+
+    #vision {
+        width: 80%;
+        border-radius: 10px;
+        background: none;
     }
 }
