@@ -950,8 +950,18 @@ ol {
 
 .invisible__div {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background: none;
+}
+
+#mission {
+    width: 80%;
+    border-radius: 10px;
+    background: none;
+}
+
+#mission-show {
+    display: none;
 }
 
 @media screen and (max-width: 960px){
@@ -1564,6 +1574,22 @@ ol {
     #vision {
         width: 80%;
         border-radius: 10px;
+        background: none;
+    }
+    #mission {
+        display: none;
+    }
+
+    #mission-show {
+        display: flex;
+        width: 80%;
+        border-radius: 10px;
+        background: none;
+    }
+
+    .invisible__div {
+        width: 100%;
+        height: 0px;
         background: none;
     }
 }
