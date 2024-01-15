@@ -890,6 +890,32 @@ tr td:nth-child(2){
     color: var(--font-content-color);
     font-size: 1.4rem;
     background: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.apply__container {
+    width: 100%;
+    height: auto;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+#apply {
+    justify-self: center;
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#apply:hover {
+    cursor: pointer;
 }
 
 ol {
@@ -962,6 +988,17 @@ ol {
 
 #mission-show {
     display: none;
+}
+
+.privacy {
+    width: 100%;
+    color: var(--font-content-color);
+    font-size: var(--content-font);
+    background: none;
+}
+
+p {
+    background: none;
 }
 
 @media screen and (max-width: 960px){
@@ -1529,6 +1566,34 @@ ol {
         padding-left: var(--normal-pad);
     }
 
+    .hiring__container {
+        width: 100%;
+        color: var(--font-content-color);
+        font-size: 1.2rem;
+        background: none;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        grid-template-areas: "job" "apply";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    .job__position {
+        grid-area: job;
+    }
+
+    .apply__container {
+        grid-area: apply;
+    }
+    
+    #apply {
+        width: 80%;
+        height: auto;
+    }
+
     .zaibatsu__title {
         width: 100%;
         text-align: center;
@@ -1591,5 +1656,11 @@ ol {
         width: 100%;
         height: 0px;
         background: none;
+    }
+
+    .privacy {
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 25px;
     }
 }
