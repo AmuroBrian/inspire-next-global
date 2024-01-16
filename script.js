@@ -4,6 +4,7 @@ const bar = document.querySelector('.menubar');
 const main = document.querySelectorAll('.show');
 let navbar = document.getElementById('navbar');
 const fade = document.querySelectorAll('.imageAnim');
+const apply = document.getElementById('apply');
 
 
 // console.log(bar);
@@ -38,3 +39,7 @@ fade.forEach(fades => {
     observerAnim.observe(fades)
 })
 
+
+apply.addEventListener('click', () => {
+    window.location.href = 'https://forms.gle/baGEMEWkv5NvvoSZ8';
+})
