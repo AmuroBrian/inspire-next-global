@@ -974,6 +974,10 @@ ol {
     cursor: default;
 }
 
+.contact__hover:hover {
+    cursor: pointer;
+}
+
 .invisible__div {
     width: 100%;
     height: 100px;
@@ -999,6 +1003,50 @@ ol {
 
 p {
     background: none;
+}
+
+.register {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    background: none;
+}
+
+.register__desc {
+    width: 100%;
+    height: auto;
+    color: var(--font-content-color);
+    font-size: var(--content-font);
+    text-align: left;
+    background: none;
+    
+}
+
+.register__image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    position: relative;
+}
+
+#register {
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+    background: none;
+}
+
+#register:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 960px){
@@ -1579,10 +1627,12 @@ p {
         align-items: center;
         justify-items: center;
         align-content: center;
+        padding: 0;
     }
 
     .job__position {
         grid-area: job;
+        padding-left: 20px;
     }
 
     .apply__container {
@@ -1591,7 +1641,7 @@ p {
     
     #apply {
         width: 80%;
-        height: auto;
+        height: 200px;
     }
 
     .zaibatsu__title {
@@ -1662,5 +1712,51 @@ p {
         font-size: 1rem;
         text-align: left;
         padding-left: 25px;
+    }
+
+    .register {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+        background: none;
+        grid-template-areas: "register__desc" "register__image";
+    }
+    
+    .register__desc {
+        width: 100%;
+        height: auto;
+        color: var(--font-content-color);
+        font-size: 1.2rem;
+        text-align: left;
+        background: none;
+        grid-area: register__desc;
+    }
+    
+    .register__image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        position: relative;
+        grid-area: register__image;
+    }
+    
+    #register {
+        width: 80%;
+        height: 200px;
+        border-radius: 10px;
+        background: none;
+    }
+    
+    #register:hover {
+        cursor: pointer;
     }
 }
