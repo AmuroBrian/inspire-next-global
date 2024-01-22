@@ -134,6 +134,7 @@ body {
     font-size: var(--subtitle-font);
     text-decoration: none;
     transform: all 0.5s ease;
+    text-align: center;
 }
 
 .menu:hover {
