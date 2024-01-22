@@ -991,6 +991,12 @@ ol {
     background: none;
 }
 
+#vision {
+    width: 80%;
+    border-radius: 10px;
+    background: none;
+}
+
 #mission-show {
     display: none;
 }
