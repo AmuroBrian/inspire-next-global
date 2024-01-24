@@ -7,9 +7,14 @@ const fade = document.querySelectorAll('.imageAnim');
 const apply = document.getElementById('apply');
 const register = document.getElementById('register');
 const investment = document.getElementById('investment');
-const popup = document.getElementById('popup');
-const close__button = document.getElementById('close__button');
+const popup1 = document.getElementById('popup1');
+const close1 = document.getElementById('close1');
 const bank__account = document.getElementById('bank__account');
+const popup2 = document.getElementById('popup2');
+const close2 = document.getElementById('close2');
+const investnow = document.getElementById('investnow');
+const popup3 = document.getElementById('popup3');
+const close3 = document.getElementById('close3');
 
 // console.log(bar);
 // console.log(main);
@@ -53,13 +58,26 @@ register.addEventListener('click', () => {
 })
 
 investment.addEventListener('click', () => {
-    popup.classList.toggle('pop');
+    popup1.classList.toggle('pop');
 })
 
-close__button.addEventListener('click', () => {
-    popup.classList.toggle('pop');
+close1.addEventListener('click', () => {
+    popup1.classList.toggle('pop');
 })
 
 bank__account.addEventListener('click', () => {
-    popup.classList.toggle('pop');
+    popup2.classList.toggle('pop1');
+    console.log("testing...");
+})
+
+close2.addEventListener('click', () => {
+    popup2.classList.toggle('pop1');
+})
+
+investnow.addEventListener('click', () => {
+    popup3.classList.toggle('pop3');
+})
+
+close3.addEventListener('click', () => {
+    popup3.classList.toggle('pop3');
 })

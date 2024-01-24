@@ -1083,18 +1083,33 @@ p {
     animation: fadeAnim 0.5s ease;
 }
 
-#close__button {
+.close__button {
     background: #1886e5;
     color: white;
     border: 2px solid black;
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 45px;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#close__button:hover {
+#close1 {
+    width: 120px;
+}
+
+#close2 {
+    width: 120px;
+}
+
+#close3 {
+    width: 120px;
+}
+
+.close__button:hover {
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -1110,6 +1125,63 @@ p {
 
 .account__button:hover {
     cursor: pointer;
+}
+
+.investment__buttons {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+}
+
+.popup2 {
+    width: 80%;
+    background: white;
+    color: var(--font-content-color);
+    /* font-size: var(--content-font); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 20px 100px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    top: 55%;
+    transform: translate(0, -50%);
+    z-index: 2000;
+    opacity: 0;
+}
+.popup2:hover {
+    cursor: pointer;
+}
+.popup2.pop1 {
+    display: flex;
+    opacity: 1;
+    animation: fadeAnim 0.5s ease;
+}
+
+.popup3 {
+    background: white;
+    width: 80%;
+    color: var(--font-content-color);
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px black;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    display: none;
+    opacity: 0;
+    position: fixed;
+    top: 55%;
+    transform: translate(0, -50%);
+    z-index: 2000;
+}
+
+.popup3.pop3 {
+    display: flex;
+    opacity: 1;
+    animation: fadeAnim 0.5s ease;
 }
 
 @keyframes fadeAnim {
@@ -1849,5 +1921,56 @@ p {
         opacity: 0;
         transform: translate(0, -55%);
         font-size: 0.8rem;
+    }
+
+    .popup2 {
+        width: 80%;
+        background: white;
+        color: var(--font-content-color);
+        /* font-size: var(--content-font); */
+        border-radius: 10px;
+        box-shadow: 0 0 10px black;
+        padding: 20px 10px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        position: fixed;
+        top: 55%;
+        font-size: 0.8rem;
+        transform: translate(0, -50%);
+        z-index: 2000;
+        opacity: 0;
+    }
+    .popup2:hover {
+        cursor: pointer;
+    }
+    .popup2.pop1 {
+        display: flex;
+        opacity: 1;
+    }
+    .popup3 {
+        background: white;
+        width: 80%;
+        color: var(--font-content-color);
+        border-radius: 10px;
+        padding: 20px 20px;
+        box-shadow: 0 0 10px black;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        display: none;
+        opacity: 0;
+        position: fixed;
+        top: 55%;
+        transform: translate(0, -50%);
+        z-index: 2000;
+        font-size: 0.8rem;
+    }
+    
+    .popup3.pop3 {
+        display: flex;
+        opacity: 1;
+        animation: fadeAnim 0.5s ease;
     }
 }
