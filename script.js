@@ -6,7 +6,10 @@ let navbar = document.getElementById('navbar');
 const fade = document.querySelectorAll('.imageAnim');
 const apply = document.getElementById('apply');
 const register = document.getElementById('register');
-
+const investment = document.getElementById('investment');
+const popup = document.getElementById('popup');
+const close__button = document.getElementById('close__button');
+const bank__account = document.getElementById('bank__account');
 
 // console.log(bar);
 // console.log(main);
@@ -47,4 +50,16 @@ apply.addEventListener('click', () => {
 
 register.addEventListener('click', () => {
     window.location.href = 'https://forms.gle/ubkSH6SgFA827jGVA';
+})
+
+investment.addEventListener('click', () => {
+    popup.classList.toggle('pop');
+})
+
+close__button.addEventListener('click', () => {
+    popup.classList.toggle('pop');
+})
+
+bank__account.addEventListener('click', () => {
+    popup.classList.toggle('pop');
 })

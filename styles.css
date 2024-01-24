@@ -669,6 +669,7 @@ i {
     justify-content: center;
     align-items: center;
     background: none;
+    position: relative;
 }
 
 .portfolio__title {
@@ -1056,6 +1057,69 @@ p {
     cursor: pointer;
 }
 
+.popup {
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--font-content-color);
+    background: white;
+    position: fixed;
+    z-index: 2000;
+    transform-origin: center;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    top: 55%;
+    opacity: 0;
+    transform: translate(0, -50%);
+}
+
+.popup.pop {
+    display: flex;
+    opacity: 1;
+    animation: fadeAnim 0.5s ease;
+}
+
+#close__button {
+    background: #1886e5;
+    color: white;
+    border: 2px solid black;
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#close__button:hover {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.account__button {
+    width: auto;
+    background: black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.account__button:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 @media screen and (max-width: 960px){
     .title__container {
         font-size: var(--title-font-medium);
@@ -1765,5 +1829,25 @@ p {
     
     #register:hover {
         cursor: pointer;
+    }
+    .popup {
+        width: 90%;
+        height: auto;
+        box-shadow: 0 0 10px black;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: var(--font-content-color);
+        background: white;
+        position: fixed;
+        z-index: 2000;
+        transform-origin: center;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        top: 55%;
+        opacity: 0;
+        transform: translate(0, -55%);
+        font-size: 0.8rem;
     }
 }
