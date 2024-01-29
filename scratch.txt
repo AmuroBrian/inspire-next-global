@@ -129,3 +129,71 @@ This product is the only one we have exclusive rights to in the Philippines!
 It's a guaranteed money-making item. For those who want to earn and those aspiring 
 to be wealthy, let's do business together! We're also actively recruiting many sales outlets 
 and salespeople for our expansion in the Philippines.
+
+
+--------------------
+.fa-regular {
+    color: #1886e5;
+    font-size: 2rem;
+}
+
+.lang__button {
+    position: fixed;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2000;
+    background: none;
+}
+
+.lang__button:hover {
+    cursor: pointer;
+}
+
+.fa-globe.rotate {
+    animation: rotateAnim 0.5s ease;
+}
+
+.langs__containers {
+    width: calc(2rem + 10px);
+    height: 250px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    z-index: 1999;
+    /* background: none; */
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#flag {
+    font-size: 2rem;
+    background: none;
+    text-align: center;
+}
+.flag__container {
+    background: none;
+}
+
+.flags {
+    background: none;
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@keyframes rotateAnim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+------------------------------

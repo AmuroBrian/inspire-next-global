@@ -15,6 +15,9 @@ const close2 = document.getElementById('close2');
 const investnow = document.getElementById('investnow');
 const popup3 = document.getElementById('popup3');
 const close3 = document.getElementById('close3');
+const lang__button = document.querySelector('.lang__button');
+const globe = document.querySelector('.fa-globe');
+let i = 0;
 
 // console.log(bar);
 // console.log(main);
@@ -67,7 +70,6 @@ close1.addEventListener('click', () => {
 
 bank__account.addEventListener('click', () => {
     popup2.classList.toggle('pop1');
-    console.log("testing...");
 })
 
 close2.addEventListener('click', () => {
@@ -80,4 +82,8 @@ investnow.addEventListener('click', () => {
 
 close3.addEventListener('click', () => {
     popup3.classList.toggle('pop3');
+})
+
+lang__button.addEventListener('click', () => {
+    globe.classList.toggle('rotate');
 })
