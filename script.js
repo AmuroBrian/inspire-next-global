@@ -18,6 +18,7 @@ const close3 = document.getElementById('close3');
 const lang__button = document.querySelector('.lang__button');
 const globe = document.querySelector('.fa-globe');
 let i = 0;
+const japan = document.getElementById('japanese');
 
 // console.log(bar);
 // console.log(main);
@@ -86,4 +87,9 @@ close3.addEventListener('click', () => {
 
 lang__button.addEventListener('click', () => {
     globe.classList.toggle('rotate');
+})
+
+japan.addEventListener('click', () => {
+    console.log('testing');
+    window.location.href = 'japanese.html';
 })
