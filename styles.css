@@ -2047,7 +2047,7 @@ p {
 
     .langs__containers {
         width: calc(2rem + 10px);
-        height: 150px;
+        height: 110px;
         position: fixed;
         bottom: 40px;
         right: 15px;
@@ -2061,5 +2061,13 @@ p {
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+    .flags {
+        background: none;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 1.5rem;
+        text-align: center;
     }
 }
