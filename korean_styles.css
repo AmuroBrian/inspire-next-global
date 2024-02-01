@@ -1847,6 +1847,7 @@ p {
     .job__position {
         grid-area: job;
         padding-left: 20px;
+        width: 100%;
     }
 
     .apply__container {
@@ -1854,7 +1855,7 @@ p {
     }
     
     #apply {
-        width: 80%;
+        width: 300px;
         height: 200px;
     }
 
@@ -1964,7 +1965,7 @@ p {
     }
     
     #register {
-        width: 80%;
+        width: 300px;
         height: 200px;
         border-radius: 10px;
         background: none;
