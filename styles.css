@@ -906,7 +906,9 @@ tr td:nth-child(2){
     height: auto;
     background: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #apply {
@@ -914,10 +916,6 @@ tr td:nth-child(2){
     width: 60%;
     height: 200px;
     border-radius: 10px;
-}
-
-#apply:hover {
-    cursor: pointer;
 }
 
 ol {
@@ -1033,13 +1031,13 @@ p {
     font-size: var(--content-font);
     text-align: left;
     background: none;
-    
 }
 
 .register__image {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: none;
@@ -1051,10 +1049,6 @@ p {
     height: 200px;
     border-radius: 10px;
     background: none;
-}
-
-#register:hover {
-    cursor: pointer;
 }
 
 .popup {
@@ -1263,6 +1257,35 @@ p {
         opacity: 1;
     }
 }
+
+/* Updated changes in apply and register button */
+
+.apply__button {
+    border-radius: var(--radius);
+    background-color: black;
+    background: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.apply__button:hover {
+    cursor: pointer;
+}
+
+.register__button {
+    border-radius: var(--radius);
+    background-color: black;
+    background: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.register__button:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 960px){
     .title__container {
         font-size: var(--title-font-medium);
@@ -2070,5 +2093,31 @@ p {
         list-style-type: none;
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    .apply__button {
+        border-radius: var(--radius);
+        background-color: black;
+        background: black;
+        color: white;
+        width: 30%;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .apply__button:hover {
+        cursor: pointer;
+    }
+    
+    .register__button {
+        border-radius: var(--radius);
+        background-color: black;
+        background: black;
+        color: white;
+        width: 40%;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .register__button:hover {
+        cursor: pointer;
     }
 }

@@ -906,7 +906,9 @@ tr td:nth-child(2){
     height: auto;
     background: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #apply {
@@ -1041,6 +1043,7 @@ p {
     height: auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background: none;
     position: relative;
@@ -1263,6 +1266,37 @@ p {
         opacity: 1;
     }
 }
+
+
+/* Updated changes in apply and register button */
+
+.apply__button {
+    border-radius: var(--radius);
+    background-color: black;
+    background: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.apply__button:hover {
+    cursor: pointer;
+}
+
+.register__button {
+    border-radius: var(--radius);
+    background-color: black;
+    background: black;
+    color: white;
+    width: 30%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.register__button:hover {
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 960px){
     .title__container {
         font-size: var(--title-font-medium);
@@ -2070,5 +2104,31 @@ p {
         list-style-type: none;
         font-size: 1.5rem;
         text-align: center;
+    }
+
+    .apply__button {
+        border-radius: var(--radius);
+        background-color: black;
+        background: black;
+        color: white;
+        width: 30%;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .apply__button:hover {
+        cursor: pointer;
+    }
+    
+    .register__button {
+        border-radius: var(--radius);
+        background-color: black;
+        background: black;
+        color: white;
+        width: 40%;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .register__button:hover {
+        cursor: pointer;
     }
 }
