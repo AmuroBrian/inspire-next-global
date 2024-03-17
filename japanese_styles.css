@@ -1296,6 +1296,50 @@ p {
     cursor: pointer;
 }
 
+/* Updated changes in group company with certification */
+.group-company {
+    display: grid;
+    width: 100%;
+    background: none;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+    grid-template-areas: "cert1 cert2" "cert3 cert3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cert-company {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+#cert-company1 {
+    grid-area: cert1;
+}
+
+#cert-company2 {
+    grid-area: cert2;
+}
+
+#cert-company3 {
+    grid-area: cert3;
+}
+
+.pic-cert {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid black;
+    width: 400px;
+}
 
 @media screen and (max-width: 960px){
     .title__container {
@@ -2130,5 +2174,93 @@ p {
     }
     .register__button:hover {
         cursor: pointer;
+    }
+        /* Updated changes in group company with certification */
+    .group-company {
+        display: grid;
+        width: 100%;
+        background: none;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+        grid-template-areas: "cert1 cert2" "cert3 cert3";
+        justify-content: center;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .cert-company {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    #cert-company1 {
+        grid-area: cert1;
+    }
+
+    #cert-company2 {
+        grid-area: cert2;
+    }
+
+    #cert-company3 {
+        grid-area: cert3;
+        width: 200px;
+    }
+
+    .pic-cert {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid black;
+        width: 150px;
+    }
+    /* Updated changes in group company with certification */
+    .group-company {
+        display: grid;
+        width: 100%;
+        background: none;
+        grid-template-columns: 50% 50%;
+        gap: 5px;
+        grid-template-areas: "cert1 cert2" "cert3 cert3";
+        justify-content: center;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .cert-company {
+        background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    #cert-company1 {
+        grid-area: cert1;
+    }
+
+    #cert-company2 {
+        grid-area: cert2;
+    }
+
+    #cert-company3 {
+        grid-area: cert3;
+        width: 200px;
+    }
+
+    .pic-cert {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border: 1px solid black;
+        width: 150px;
     }
 }
