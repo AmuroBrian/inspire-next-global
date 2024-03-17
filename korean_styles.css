@@ -1301,10 +1301,10 @@ p {
     width: 100%;
     background: none;
     grid-template-columns: 45% 45%;
-    gap: 20px;
-    grid-template-areas: "cert1 cert2" "cert3 cert3";
+    gap: 30px;
+    grid-template-areas: "cert4 cert3" "cert2 cert1";
     justify-content: center;
-    align-items: center;
+    align-items: start;
     justify-items: center;
     align-content: center;
 }
@@ -1332,14 +1332,18 @@ p {
     grid-area: cert3;
 }
 
+#cert-company4 {
+    grid-area: cert4;
+}
+
 .pic-cert {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid black;
     width: 400px;
+    height: 300px;
 }
-
 
 @media screen and (max-width: 960px){
     .title__container {
@@ -2182,10 +2186,11 @@ p {
         background: none;
         grid-template-columns: 50% 50%;
         gap: 5px;
-        grid-template-areas: "cert1 cert2" "cert3 cert3";
+        grid-template-areas: "cert4 cert3" "cert2 cert1";
         justify-content: center;
         justify-items: center;
         align-items: start;
+        align-content: center;
     }
 
     .cert-company {
@@ -2213,10 +2218,14 @@ p {
         width: 200px;
     }
 
+    #cert-company4 {
+        grid-area: cert4;
+    }
     .pic-cert {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border: 1px solid black;
         width: 150px;
+        height: 100px;
     }
 }
