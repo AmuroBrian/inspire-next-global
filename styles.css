@@ -1307,7 +1307,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
 }
 
@@ -2192,7 +2192,7 @@ p {
         justify-content: center;
         align-items: center;
         gap: 5px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 900;
         text-align: center;
     }
