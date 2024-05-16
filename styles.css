@@ -990,6 +990,12 @@ ol {
     background: none;
 }
 
+#orgchart {
+    width: 80%;
+    background: none;
+    display: flex;
+}
+
 #vision {
     width: 80%;
     border-radius: 10px;

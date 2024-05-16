@@ -1342,6 +1342,13 @@ p {
     height: 300px;
 }
 
+#orgchart {
+    width: 80%;
+    background: none;
+    display: flex;
+}
+
+
 @media screen and (max-width: 960px){
     .title__container {
         font-size: var(--title-font-medium);
