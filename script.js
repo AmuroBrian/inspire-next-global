@@ -62,7 +62,8 @@ register.addEventListener('click', () => {
 })
 
 investment.addEventListener('click', () => {
-    popup1.classList.toggle('pop');
+    // popup1.classList.toggle('pop');
+    window.location.href = 'https://www.paypal.com/ncp/payment/PV726ZPX6VXLE';
 })
 
 close1.addEventListener('click', () => {
