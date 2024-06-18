@@ -78,8 +78,7 @@ close2.addEventListener('click', () => {
 })
 
 investnow.addEventListener('click', () => {
-    // popup3.classList.toggle('pop3');
-    window.location.href = 'https://www.paypal.com/ncp/payment/PV726ZPX6VXLE';
+    popup3.classList.toggle('pop3');
 })
 
 close3.addEventListener('click', () => {
