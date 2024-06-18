@@ -62,8 +62,7 @@ register.addEventListener('click', () => {
 })
 
 investment.addEventListener('click', () => {
-    // popup1.classList.toggle('pop');
-    window.location.href = 'https://www.paypal.com/ncp/payment/PV726ZPX6VXLE';
+    popup1.classList.toggle('pop');
 })
 
 close1.addEventListener('click', () => {
@@ -79,7 +78,8 @@ close2.addEventListener('click', () => {
 })
 
 investnow.addEventListener('click', () => {
-    popup3.classList.toggle('pop3');
+    // popup3.classList.toggle('pop3');
+    window.location.href = 'https://www.paypal.com/ncp/payment/PV726ZPX6VXLE';
 })
 
 close3.addEventListener('click', () => {
