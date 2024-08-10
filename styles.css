@@ -284,14 +284,14 @@ body {
 .read_button {
     width: auto;
     height: auto;
-    color: var(--font-title-color);
+    color: white;
     display: flex;
     background: black;
     border-radius: var(--radius);
     padding: 10px;
     font-weight: 800;
-    font-size: 2rem;
-    border: 3px solid var(--font-title-color);
+    font-size: 1.5rem;
+    border: 3px solid white;
 }
 
 .read_button:hover {
