@@ -1366,10 +1366,6 @@ p {
     .title__container {
         font-size: var(--title-font-medium);
     }
-    .vid__background {
-        object-fit: contain;
-        position: absolute;
-    }
     .menulist {
         display: grid;
         width: 100vw;
