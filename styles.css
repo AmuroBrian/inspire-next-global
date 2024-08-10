@@ -1394,7 +1394,7 @@ p {
     .menu {
         width: 100%;
         display: grid;
-        color: var(--font-title-color);
+        color: white;
     }
 
     .menubar {
