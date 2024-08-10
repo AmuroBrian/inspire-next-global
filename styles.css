@@ -1,8 +1,10 @@
 :root {
     /* --font-color: rgb(194, 169, 31); */
     /* --font-title-color: #e0c48c; */
-    --font-title-color: white;
-    --background-color: #1886e5;
+    /* --font-title-color: white; */
+    --font-title-color: #013c7e;
+    /* --background-color: #1886e5; */
+    --background-color: linear-gradient(white,oran);
     --font-gold: white;
     --font-color: white;
     --title-font: 2rem;
@@ -65,7 +67,9 @@ body {
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px; */
-    background: rgba( 0, 0, 0, 0.25 );
+    /* background: rgba( 0, 0, 0, 0.25 ); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,164,68,1) 68%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
@@ -158,7 +162,7 @@ body {
     background: none;
     display: grid;
     /* align-content: center; */
-    align-items: end;
+    align-items: center;
     padding: 50px;
     grid-template-columns: 50%;
     grid-template-areas: "message1 message2" "button__container message2";
@@ -177,45 +181,46 @@ body {
 }
 
 .quote {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     gap: 5px;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 2rem;
     font-family: 'Train One';
     /* background: white; */
-    background: rgba( 255, 255, 255, 0.25 );
+    /* background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     /* background-color: white; */
-    align-items: start;
-    padding: 30px 20px;
+    background: none;
+    align-items: center;
+    padding: 20px 20px;
     border-radius: var(--radius);
-    justify-content: center;
+    justify-content: start;
 }
 
 .color1 {
-    color: black;
+    color: gray;
     background: none;
 }
 
 .color2 {
-    color: var(--font-gold);
+    color: gray;
     background: none;
-    text-shadow: 0 0 100px white;
+    text-shadow: 0 0 100px gray;
 }
 
 .message2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--font-gold);
-    font-size: 5.5rem;
+    color: gray;
+    font-size: 3rem;
     grid-area: message2;
     background: none;
     align-self: center;
@@ -305,7 +310,9 @@ body {
 }
 
 .navbar.blacken {
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,164,68,1) 68%);
     transition: all 0.5s ease;
     box-shadow: 0 5px 50px black;
 }

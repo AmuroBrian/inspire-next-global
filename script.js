@@ -28,15 +28,15 @@ menubar.addEventListener('click', ()=>{
     menulist.classList.toggle('active');
 })
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        navbar.classList.toggle('blacken', entry.isIntersecting)
-        menulist.classList.toggle('is-black', entry.isIntersecting)
-    })
-}, {
-    threshold: 0.01
-}
-)
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         navbar.classList.toggle('blacken', entry.isIntersecting)
+//         menulist.classList.toggle('is-black', entry.isIntersecting)
+//     })
+// }, {
+//     threshold: 0.01
+// }
+// )
 
 main.forEach(container => {
     observer.observe(container)
