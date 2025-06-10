@@ -46,8 +46,8 @@ body {
   background: rgb(251, 250, 250);
   background: linear-gradient(
     45deg,
-    rgba(251, 250, 250, 1) 0%,
-    rgba(10, 149, 249, 1) 100%
+    rgb(255, 255, 255) 0%,
+    #ffffff 100%
   );
   user-select: none;
   scroll-behavior: smooth;
@@ -721,6 +721,7 @@ i {
   justify-items: center;
 }
 
+
 .portfolio__box {
   display: flex;
   flex-direction: column;
@@ -850,17 +851,17 @@ i {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Optional: You can remove or keep center for vertical alignment */
+  align-items: flex-start;     /* Left align items */
   width: 100%;
   background: none;
 }
 
 .company-name {
-  text-align: center;
+  text-align: left;           /* Left align text */
   width: 100%;
   color: black;
-  font-size: 1.7rem;
+  font-size: 2.2rem;          /* Increased font size */
   background: none;
 }
 
@@ -870,7 +871,7 @@ table {
   border-collapse: collapse;
   border: none;
   color: var(--font-content-color);
-  font-size: 1.4rem;
+  font-size: 2.6rem;          /* Increased font size */
   background: none;
 }
 
@@ -879,12 +880,14 @@ tbody {
 }
 
 tr {
+  font-size: medium;
   background: none;
 }
 
 td {
   padding: 5px;
   background: none;
+  font-size: large;
   /* background-color: white; */
 }
 
@@ -905,6 +908,37 @@ tr td:nth-child(2) {
   font-size: 1.4rem;
   text-align: left;
   background: none;
+}
+
+.address-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.address {
+  color: var(--font-content-color);
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 400px; /* Adjust height as desired */
+}
+
+.address-map {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+  display: block;
 }
 
 .contacts__container {
@@ -1001,6 +1035,7 @@ ol {
   text-decoration: none;
   color: var(--font-content-color);
   cursor: default;
+  font-size: larger;
 }
 
 .contact__hover:hover {
@@ -1011,6 +1046,7 @@ ol {
   width: 100%;
   height: 100px;
   background: none;
+  text-align: center;
 }
 
 #mission {
@@ -1036,11 +1072,49 @@ ol {
   display: none;
 }
 
+.image-placeholder {
+  width: 40vw;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  background: #ddd;
+  font-style: normal;
+
+  justify-self: center; /* centers horizontally in the grid cell */
+  align-self: center;   /* centers vertically in the grid cell (optional) */
+}
+
+.images-row {
+  display: flex;
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center;     /* Optional: aligns images vertically if they differ in height */
+  gap: 20px;               /* Optional: adds spacing between the two images */
+  flex-wrap: wrap;         /* Optional: wraps images on smaller screens */
+  margin-top: 20px;        /* Optional: adds spacing above the row */
+}
+
+.privacy-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  align-content: center;/* This centers child divs horizontally */
+}
+
+.text-block {
+  max-width: 1500px;  /* Increased from 800px to 1100px */
+  margin: 0 auto;     /* Center horizontally */
+  padding: 20px;
+  text-align: justify; /* Optional: aligns text evenly */
+  font-size: large;
+}
+
+
 .privacy {
   width: 100%;
-  color: var(--font-content-color);
-  font-size: var(--content-font);
-  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers child divs horizontally */
 }
 
 p {
@@ -1817,13 +1891,12 @@ p {
     display: none;
   }
 
-  .ceo-title {
-    width: 100%;
-    text-align: center;
-    color: black;
-    font-size: 2rem;
-    background: none;
-  }
+ .ceo-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
 
   .ceo-message__container {
     width: 100%;
@@ -1874,14 +1947,14 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 100%;
     background: none;
   }
 
   .company-name {
-    text-align: center;
+    text-align: left;
     width: 100%;
     color: black;
     font-size: 1.5rem;
@@ -1889,6 +1962,7 @@ p {
   }
 
   table {
+    text-align: left;
     align-self: flex-start;
     width: 100%;
     border-collapse: collapse;
@@ -2042,11 +2116,13 @@ p {
     background: none;
   }
 
-  .privacy {
-    font-size: 1rem;
-    text-align: left;
-    padding-left: 25px;
-  }
+ .privacy {
+  max-width: 750px; /* Control the width for readability (adjust as needed) */
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+}
 
   .register {
     width: 100%;
