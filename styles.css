@@ -2492,4 +2492,46 @@ ol {
   text-align: center;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  text-tra
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.portfolio__visit-btn:hover {
+  background: #e6953d;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(252, 164, 68, 0.3);
+  transform: translateY(-1px);
+}
+
+.portfolio__visit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(252, 164, 68, 0.2);
+}
+
+@media (max-width: 768px) {
+  .portfolio__box {
+    min-height: auto;
+    height: auto;
+  }
+
+  .portfolio__content {
+    min-height: 180px;
+  }
+
+  .portfolio__visit-btn {
+    width: 100%;
+    padding: 14px 32px;
+    font-size: 1rem;
+    margin-top: 20px;
+    align-self: stretch;
+  }
+}
+
+.portfolio__actions {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
