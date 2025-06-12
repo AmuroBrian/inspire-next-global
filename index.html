@@ -36,9 +36,8 @@
             <ul class = "menulist">
                 <li class="menu"><a href="#home" class = "menu home-lang">HOME</a></li>
                 <li class="menu"><a href="#about" class = "menu about-lang" >ABOUT</a></li>
-                <li class="menu"><a href="#job" class = "menu job-lang">JOB APPLICATION</a></li>
                 <li class="menu"><a href="#privacy" class = "menu policy-lang">PRIVACY POLICY</a></li>
-                <li class="menu"><a href="#contacts" class = "menu contact-lang">CONTACT</a></li>
+                <li class="menu"><a href="#contact" class = "menu contact-lang">CONTACT</a></li>
             </ul>
 
             <div class="menubar" id = "menubar">
@@ -84,10 +83,10 @@
             </div>
         </a>
         <div class="about__page">
-            <div class="about__title">COMPANY OVERVIEW</div>
+            <div class="about__title" id="about">COMPANY OVERVIEW</div>
             <br>
             <div class="overview__container">
-                <img src="assets/pse.png" alt="" id="hi-tech" class="imageAnim">
+                <img src="assets/tower.jpg" alt="" id="hi-tech" class="imageAnim">
                 <p id="overview">
                     <b>Inspire Next Global Inc.</b> is a visionary management and company
                     with diverse interests spanning construction and development, healthcare and pharmaceuticals, gaming and entertainment, agriculture trading, and
@@ -151,7 +150,7 @@
        
         <div class="portfolio__container">
             <div class="portfolio__title">
-                <b>Our Products</b>
+                <b>Company Under Inspire</b>
                 <p>J Tech</p>
             </div>
             <br>
@@ -195,7 +194,7 @@
                 </div>
             </div>
         </div>
-        <div class="zaibatsu__title"><b>CONGLOMERATE MODEL</b></div>
+        <!-- <div class="zaibatsu__title"><b>CONGLOMERATE MODEL</b></div>
         <div class="zaibatsu__container">
             <img src="assets/zaibatsu.png" class = "imageAnim" id="zaibatsu">
             <div class="zaibatsu__desc">
@@ -208,7 +207,7 @@
                 accumulation and wield substantial influence in both economic and political arenas. This intricate web of connections and interests 
                 amplifies the collective capacity for growth and leverage, making the Conglomerate model a formidable force in the business world.
             </div>
-        </div>
+        </div> -->
         <br> 
         <!-- ito need update -->
         <div class="ceo-title"><b>ORGANIZATION CHART</b></div>
@@ -249,54 +248,68 @@ This structure promotes clear leadership, streamlined communication, and efficie
         </div>
 
         <br>
-        <div class="ceo-title"><b>CORPORATION PROFILE</b></div>
-        <div class="corporation__container">
-            <div class="org__position">
-                <span class = "company-name"><b>Contact</b></span>
-                <!-- Remove -->
-                <span class = "company-name"></span> 
-                <table>
-                    <tr>
-                     Website: <a href="https://inspirenextglobal.com" class = "contact__details contact__hover">https://inspirenextglobal.com</a>
-                    </tr>
-                    <tr>
-                      Telephone No.:  <a href="/" class = "contact__details"> 02-8538-5054 / 02-77509605 / +639946529009</a>
-                    </tr>
-                    <tr>
-                        Email: <a href="/" class = "contact__details">info@inspirenextglobal.com</a>
-                    </tr>
-                    <tr>
-                        Facebook: <a href="https://www.facebook.com/profile.php?id=61555589944362&mibextid=ZbWKwL" class = "contact__details contact__hover">Inspire Next Global Inc.
-                    </tr>
-                    <tr>
-                        Instagram: <a href="https://www.instagram.com/inspire.next.global.inc?igsh=MW9vYWkxOHd0OWc3NQ==" class = "contact__details contact__hover">@inspire.next.global.inc</a>
-                    </tr>
-                    <tr>
-                        Tiktok: <a href="https://www.tiktok.com/@inspire.next.glob?_t=8j33XmQUuBD&_r=1" class = "contact__details contact__hover">@inspire.next.glob</a>
-                    </tr>
-                </table>
-            </div>
-            
-            <!-- Copy in holdingsite -->
-    <div class="address-container">
-  <div class="address">
-    <span class="company-name"><b>Address</b></span><br>
-    <b>HEAD OFFICE:</b> <br>
-    6F Alliance Global Tower, 11th Avenue, corner 36th St, Taguig, Metro Manila
-    <br><br>
+        <div class="ceo-title" id="contact"><b>CORPORATION PROFILE</b></div>
+<div class="corporation__container">
+  <!-- Contact (Left Column) -->
+  <div class="contact-container" >
+    
+  <div class="company-name">Contact</div>
+  <div class="contact-item">
+    <span class="contact-label">Website:</span><br>
+    <a href="https://inspirenextglobal.com" class="contact__details" target="_blank">https://inspirenextglobal.com</a>
   </div>
-  <div class="map-wrapper">
-    <iframe
-      class="address-map"
-      src="https://www.google.com/maps?q=6F+Alliance+Global+Tower,+11th+Avenue,+corner+36th+St,+Taguig,+Metro+Manila&output=embed"
-      frameborder="0"
-      allowfullscreen=""
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
+  <div class="contact-item">
+    <span class="contact-label">Telephone No.:</span><br>
+    <a href="tel:0285385054" class="contact__details">02-8538-5054 / 02-77509605 / +639946529009</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-label">Email:</span><br>
+    <a href="mailto:info@inspirenextglobal.com" class="contact__details">info@inspirenextglobal.com</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-label">Facebook:</span><br>
+    <a href="https://www.facebook.com/profile.php?id=61555589944362&mibextid=ZbWKwL" class="contact__details" target="_blank">Inspire Next Global Inc.</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-label">Instagram:</span><br>
+    <a href="https://www.instagram.com/inspire.next.global.inc?igsh=MW9vYWkxOHd0OWc3NQ==" class="contact__details" target="_blank">@inspire.next.global.inc</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-label">Tiktok:</span><br>
+    <a href="https://www.tiktok.com/@inspire.next.glob?_t=8j33XmQUuBD&_r=1" class="contact__details" target="_blank">@inspire.next.glob</a>
   </div>
 </div>
-        <!-- <div class="invisible__div" id = "contacts">
+  <!-- Address (Right Column) -->
+   
+  <div class="address-container">
+    <div class="address">
+      <span class="company-name" style="font-size:2em; font-weight:bold;">Address</span><br>
+      <b>HEAD OFFICE:</b> <br>
+    MAIN OFFICE: 6F Alliance Global Tower, 11th Avenue, corner 36th St, Taguig, Metro Manila<br>
+    <br>    
+    SATELLITE OFFICE:
+    1209 Mountain Road PL NE STE N Bernalillo County Albuquerque, NM, 87110, USA<br>
+    <br>
+    SATELLITE OFFICE:
+    20th floor, Trust Tower Main Building, 1-8-3 Marunouchi, Chiyoda-ku, Tokyo 100-8283 
+
+
+      <br><br>
+    </div>
+    
+  </div>
+</div>
+       <div class="map-wrapper">
+      <iframe
+        class="address-map"
+        src="https://www.google.com/maps?q=6F+Alliance+Global+Tower,+11th+Avenue,+corner+36th+St,+Taguig,+Metro+Manila&output=embed"
+        frameborder="0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div> 
+    <!-- <div class="invisible__div" id = "contacts">
 
         </div>
         <div class="ceo-title"><b>CONTACTS</b></div>
@@ -335,9 +348,8 @@ This structure promotes clear leadership, streamlined communication, and efficie
                 </div>
             </div>
         </div> -->
-        <br>
-        <br>
-        <br>
+        
+    
         <div class="invisible__div" id = "privacy"></div>
          </div>
        <div class="privacy-section">

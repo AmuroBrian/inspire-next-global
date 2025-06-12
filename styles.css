@@ -285,9 +285,9 @@ body {
 .read_button {
   width: auto;
   height: auto;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
-  background: black;
+  background: rgb(255, 187, 0);
   border-radius: var(--radius);
   padding: 10px;
   font-weight: 800;
@@ -327,7 +327,7 @@ body {
   height: auto;
   font-size: var(--title-font);
   padding: 10px;
-  color: white;
+  color: rgb(207, 165, 0);
   font-weight: 900;
 
   background: rgba(0, 0, 0, 0.25);
@@ -902,7 +902,7 @@ td {
 
 .address-map {
   width: 100%;
-  height: 100%;
+  height: 110%;
   border: 0;
   border-radius: 8px;
   display: block;
@@ -1086,7 +1086,27 @@ ol {
 #mission-show {
   display: none;
 }
-
+.portfolio__button1 {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #ff8800; /* Orange */
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+}
+.portfolio__button1:hover,
+.portfolio__button1:focus {
+  background-color: #e67300; /* Darker orange on hover */
+  box-shadow: 0 4px 16px rgba(255,136,0,0.13);
+  color: #ffa303;
+  text-decoration: none;
+}
 .image-placeholder {
   width: 40vw;
   max-width: 600px;
@@ -1120,6 +1140,105 @@ ol {
   color: #333;
   font-size: 16px;
   margin: 30px 0;
+  margin-top: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  align-content: center;/* This centers child divs horizontally */
+}
+
+.corporation__container {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.org__position, .address-container {
+  flex: 1 1 0;
+  min-width: 320px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.company-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  color: #888;
+  font-size: 1.1em;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.company-name {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  color: #888;
+  font-size: 18px;
+}
+
+.contact-label {
+  font-weight: bold;
+  font-size: large;
+  color: #333;
+  margin-right: 6px;
+}
+
+.contact__details {
+  color: #797979;
+  text-decoration: none;
+  transition: text-decoration 0.2s, color 0.2s;
+}
+
+.contact__details:hover,
+.contact__details:focus {
+  text-decoration: underline;
+  color: #e67300;
+}
+
+.map-wrapper {
+  width: 100vw;
+  height: 400px;
+}
+
+.address-map {
+  width: 100%;    /* Adjust this width as needed */
+  height: 100%;   /* Adjust this height as needed */
+  border-radius: 10px;
+  border: 1px solid #eee;
+  
+}
+
+.text-block {
+  max-width: 1500px;  /* Increased from 800px to 1100px */
+  margin: 0 auto;     /* Center horizontally */
+  padding: 20px;
+  text-align: justify; /* Optional: aligns text evenly */
+  font-size: large;
 }
 
 .privacy p {
@@ -1129,6 +1248,10 @@ ol {
 .privacy ol {
   margin-left: 20px;
   margin-bottom: 25px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers child divs horizontally */
 }
 
 .privacy ol li {
@@ -1397,7 +1520,7 @@ ol {
 .apply__button {
   border-radius: var(--radius);
   background-color: black;
-  background: black;
+  background: rgb(255, 255, 255);
   color: white;
   width: 30%;
   text-align: center;
