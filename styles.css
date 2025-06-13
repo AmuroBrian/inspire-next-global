@@ -839,60 +839,58 @@ i {
 }
 
 .company-name {
-  font-size: var(--title-font-medium);
+  font-size: 2rem;
+  font-weight: bold;
   color: var(--font-title-color);
   text-align: left;
   width: 100%;
+  margin-bottom: 0.5rem;
 }
 
+/* Responsive Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  margin-bottom: 1.5rem;
+  background: none;
+  overflow-x: auto;
+  display: block;
 }
-
 tr {
-  text-align: left;
   width: 100%;
 }
-
 td {
   padding: 10px;
   text-align: left;
   width: 100%;
 }
 
+/* Contact details and address */
 .contact__details {
   text-decoration: none;
   color: var(--font-content-color);
   text-align: left;
   width: 100%;
-}
-
-.address {
-  width: 100%;
-  padding: 20px;
-  text-align: left;
+  display: block;
 }
 
 .address-container {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  gap: 40px;
   width: 100%;
-  text-align: left;
   align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
 }
 
 .address {
   color: var(--font-content-color);
   font-size: 1.4rem;
+  width: 100%;
   text-align: left;
-}
-
-.company-name {
-  font-size: 2rem;
-  font-weight: bold;
+  padding: 20px 0;
 }
 
 .map-wrapper {
@@ -907,15 +905,48 @@ td {
   border-radius: 8px;
   display: block;
 }
-
 .contacts__container {
   width: 100%;
   color: var(--font-content-color);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background: none;
-  line-height: 50px;
+  line-height: 2;
+  margin-bottom: 2rem;
 }
 
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+  .address-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  .map-wrapper {
+    max-width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-name {
+    font-size: 1.3rem;
+  }
+  .address {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .contacts__container {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  table, tr, td {
+    font-size: 0.95rem;
+    padding: 6px;
+  }
+  .map-wrapper {
+    height: 180px;
+  }
+}
 .hiring__container {
   width: 100%;
   color: var(--font-content-color);
@@ -2605,7 +2636,7 @@ ol {
   padding: 12px 32px;
   margin-top: auto;
   background: #fca444;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   font-size: 0.95rem;
   border: none;
@@ -2615,4 +2646,110 @@ ol {
   text-align: center;
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
-  text-tra
+}
+.corporate-structure-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  background: #ffffff;
+  border-radius: 18px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+/* Make headings span full width and center them */
+.structure-title {
+  grid-column: 1 / -1;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.corporate-structure-cards h1.structure-title {
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #195196;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.corporate-structure-cards h2.structure-title {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #195196;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.structure-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 1.5rem 1rem;
+  transition: box-shadow 0.2s;
+}
+
+.structure-card:hover {
+  box-shadow: 0 8px 24px rgba(25, 81, 150, 0.12);
+}
+
+.structure-card img {
+  width: 85%;
+  height: 120px;
+  object-fit: contain;
+  background: #506e91;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.structure-card h4 {
+  color: #000000;
+  font-size: 1.13rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.structure-card p {
+  color: #feaa02;
+  font-size: 0.98rem;
+  text-align: center;
+  margin: 0;
+}
+
+.structure-card.major-shareholder {
+  grid-column: 1 / -1;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2.5px solid #ffffff;
+  box-shadow: 0 8px 36px rgba(25,81,150,0.12);
+}
+
+@media (max-width: 600px) {
+  .corporate-structure-cards {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.2rem 0.3rem;
+  }
+  .structure-card {
+    padding: 1.2rem 0.5rem;
+  }
+  .structure-card img {
+    height: 90px;
+  }
+  .structure-card.major-shareholder {
+    max-width: 98%;
+  }
+  .structure-title {
+    font-size: 1.2rem !important;
+  }
+}
